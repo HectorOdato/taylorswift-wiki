@@ -1,0 +1,13 @@
+// Taylor Swift Albums Images
+export const taylorSwiftImg = "https://res.cloudinary.com/deijzj2mb/image/upload/v1768711503/1_rzsmnz.png";
+export const fearlessImg = "https://res.cloudinary.com/deijzj2mb/image/upload/v1768711504/2_i8zm64.png";
+export const speakNowImg = "https://res.cloudinary.com/deijzj2mb/image/upload/v1768711494/3_x9goaq.png";
+export const redImg = "https://res.cloudinary.com/deijzj2mb/image/upload/v1768711495/4_n46kef.png";
+export const img1989 = "https://res.cloudinary.com/deijzj2mb/image/upload/v1768711495/5_vekkln.png";
+export const reputationImg = "https://res.cloudinary.com/deijzj2mb/image/upload/v1768711496/6_qlhztr.png";
+export const loverImg = "https://res.cloudinary.com/deijzj2mb/image/upload/v1768711497/7_xn2kzo.png";
+export const folkloreImg = "https://res.cloudinary.com/deijzj2mb/image/upload/v1768711498/8_hjtdrr.png";
+export const evermoreImg = "https://res.cloudinary.com/deijzj2mb/image/upload/v1768711499/9_sbeeqh.png";
+export const midnightsImg = "https://res.cloudinary.com/deijzj2mb/image/upload/v1768711500/10_qdspe8.png";
+export const theTorturedPoetsDepartmentImg = "https://res.cloudinary.com/deijzj2mb/image/upload/v1768711501/11_vdyeaw.png";
+export const theLifeOfAShowgirlImg = "https://res.cloudinary.com/deijzj2mb/image/upload/v1768711502/12_n8tbzs.png";

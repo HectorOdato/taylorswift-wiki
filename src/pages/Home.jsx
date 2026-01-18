@@ -15,6 +15,7 @@ function Home() {
                         Album={album}
                     />
                 ))}
+                
             </div>
         </div>
     );
