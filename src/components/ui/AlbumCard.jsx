@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 const AlbumCard = ({ Album }) => {
   return (
     <Link to={`/album/${Album.id}`}>
-      <div className="bg-white shadow-md overflow-hidden hover:shadow-xl hover:scale-105 transition-all duration-300 cursor-pointer">
+      <div className="shadow-md overflow-hidden hover:shadow-xl hover:scale-105 transition-all duration-300 cursor-pointer">
         <img 
           src={Album.img} 
           alt={Album.title} 

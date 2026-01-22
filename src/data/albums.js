@@ -1,6 +1,11 @@
 import { taylorSwiftImg, fearlessImg, speakNowImg, redImg, img1989, reputationImg, loverImg, folkloreImg, evermoreImg, midnightsImg, theTorturedPoetsDepartmentImg, theLifeOfAShowgirlImg } from "../assets/images/img.jsx";
 import ttpdsong from "../data/Songs/Ttpd.json";
-
+import song from "../data/Songs/1989.json";
+import debugsong from "../data/Songs/Debug.json";
+import fearlesssong from "../data/Songs/Fearless.json";
+import folkloresong from "../data/Songs/Folklore.json";
+import loversong from "../data/Songs/Lover.json";
+import repsong from "../data/Songs/REP.json";
 
 const albums = [
   {
@@ -9,7 +14,7 @@ const albums = [
     año: 2006,
     img: taylorSwiftImg,
     descripcion: "Su álbum debut que la presentó al mundo con canciones emotivas sobre la adolescencia y el primer amor.",
-    songs: ["Tim McGraw", "Teardrops on My Guitar", "Our Song", "Mary's Song", "Tied Together with a Smile", "Stay Beautiful", "Should've Said No", "Picture to Burn", "Cold as Stone", "The Outside", "A Perfectly Good Heart"],
+    songs: debugsong,
   },
   {
     id: "fearless",
@@ -17,7 +22,7 @@ const albums = [
     año: 2008,
     img: fearlessImg,
     descripcion: "Un álbum sobre la valentía en el amor y la vida, con éxitos como Love Story y White Horse.",
-    songs: ["Fearless", "Love Story", "White Horse", "You Belong With Me", "Fifteen", "Enchanted", "Back to December", "Champagne Problems", "Goodbye Summer", "The Last Time"],
+    songs: fearlesssong,
   },
   {
     id: "speak_now",
@@ -41,7 +46,7 @@ const albums = [
     año: 2014,
     img: img1989,
     descripcion: "Su primer álbum completamente pop, marcando su transición de country a pop. Incluye algunos de sus mayores éxitos.",
-    songs: ["Welcome to New York", "Blank Space", "Style", "Out of the Woods", "Shake It Off", "How You Get the Girl", "1989", "Bad Blood", "Wildest Dreams", "You Are in Love"],
+    songs: song,
   },
   {
     id: "reputation",
@@ -49,7 +54,7 @@ const albums = [
     año: 2017,
     img: reputationImg,
     descripcion: "Un álbum oscuro que enfrenta la controversia y la mala reputación que Taylor experimentó, con una estética de serpiente.",
-    songs: ["...Ready For It?", "End Game", "Don't Call Me 'Angel'", "King of My Heart", "Delicate", "Gorgeous", "Getaway Car", "So It Goes...", "Reputation", "Dress"],
+    songs: repsong,
   },
   {
     id: "lover",
@@ -57,7 +62,7 @@ const albums = [
     año: 2019,
     img: loverImg,
     descripcion: "Un álbum romántico y colorido que celebra el amor en todas sus formas. Incluye éxitos como ME! y Lover.",
-    songs: ["ME!", "The Archer", "The Man", "Lover", "Cornelia Street", "Daylight", "The Story of Us", "Afterglow", "Invisible String", "Calm Down"],
+    songs: loversong,
   },
   {
     id: "folklore",
@@ -65,7 +70,7 @@ const albums = [
     año: 2020,
     img: folkloreImg,
     descripcion: "Un álbum de folk-pop íntimo lanzado sorpresivamente durante la pandemia, con narraciones de historias ficticias.",
-    songs: ["the 1", "cardigan", "the last great american dynasty", "exile", "my tears ricochet", "mirrorball", "seven", "august", "this is me trying", "illicit affairs"],
+    songs: folkloresong,
   },
   {
     id: "evermore",
@@ -89,7 +94,7 @@ const albums = [
     año: 2024,
     img: theTorturedPoetsDepartmentImg,
     descripcion: "Su último álbum que explora el drama, la poesía y la catarsis emocional con una diversidad de estilos musicales.",
-    songs: ttpdsong.map((song) => song.title + " - " + song.description),
+    songs: ttpdsong,
   },
   {
     id: "the_life_of_a_showgirl",
