@@ -12,7 +12,7 @@ function Home() {
                 {albums.map((album) => (
                     <AlbumCard
                         key={album.id}
-                        Album={album}
+                        album={album}
                     />
                 ))}
                 

@@ -2,7 +2,7 @@ import React from "react";
 import { useParams } from "react-router-dom";
 import Header from "../components/layout/Header.jsx";
 import SongCard from "../components/ui/SongCard.jsx";
-import albums from "../data/albums.js";  
+import albums from "../data/albums.js";
 
 
 function AlbumPage() {

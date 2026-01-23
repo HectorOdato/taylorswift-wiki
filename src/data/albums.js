@@ -1,6 +1,7 @@
 import { taylorSwiftImg, fearlessImg, speakNowImg, redImg, img1989, reputationImg, loverImg, folkloreImg, evermoreImg, midnightsImg, theTorturedPoetsDepartmentImg, theLifeOfAShowgirlImg } from "../assets/images/img.jsx";
 import { imgdebutbanner, imgfearlessbanner, imgspeaknowbanner, imgredbanner, img1989banner, imgreputationbanner, imgloverbanner, imgfolklorebanner, imgevermorebanner, imgmidnightsbanner, imgtorturedpoetsbanner, imglifeofashowgirlbanner } from "../assets/images/imgbanners.jsx";
 import { gradientClasses } from "../components/layout/PageBackground.jsx";
+import {descriptions}  from "./descriptionalbum.js"
 import ttpdsong from "../data/Songs/Ttpd.json";
 import song from "../data/Songs/1989.json";
 import debugsong from "../data/Songs/Debug.json";
@@ -17,7 +18,7 @@ const albums = [
     img: taylorSwiftImg,
     banner: imgdebutbanner,
     background: gradientClasses.debut,
-    descripcion: "Su álbum debut que la presentó al mundo con canciones emotivas sobre la adolescencia y el primer amor.",
+    descripcion: descriptions.debut,
     songs: debugsong,
   },
   {
@@ -27,7 +28,7 @@ const albums = [
     banner: imgfearlessbanner,
     img: fearlessImg,
     background: gradientClasses.fearless,
-    descripcion: "Un álbum sobre la valentía en el amor y la vida, con éxitos como Love Story y White Horse.",
+    descripcion: descriptions.fearless,
     songs: fearlesssong,
   },
   {
@@ -37,7 +38,7 @@ const albums = [
     banner: imgspeaknowbanner,
     img: speakNowImg,
     background: gradientClasses.speakNow,
-    descripcion: "Su tercer álbum de estudio completamente escrito por Taylor, explorando temas de traición y venganza romántica.",
+    descripcion: descriptions.speakNow,
     songs: ["Mine", "Sparks Fly", "Back to December", "Innocent", "Enchanted", "Better Than Revenge", "Haunted", "Last Kiss", "Long Live", "Dear John"],
   },
   {
@@ -47,7 +48,7 @@ const albums = [
     img: redImg,
     banner: imgredbanner,
     background: gradientClasses.red,
-    descripcion: "Un álbum que explora el rango completo de emociones en una relación, desde el amor apasionado hasta la ruptura dolorosa.",
+    descripcion: descriptions.red,
     songs: ["State of Grace", "Treacherous", "I Knew You Were Trouble", "All Too Well", "22", "I Almost Do", "We Are Never Getting Back Together", "Stay Stay Stay", "The Last Time", "Begin Again"],
   },
   {
@@ -57,7 +58,7 @@ const albums = [
     img: img1989,
     banner: img1989banner,
     background: gradientClasses.nineteenEightyNine,
-    descripcion: "Su primer álbum completamente pop, marcando su transición de country a pop. Incluye algunos de sus mayores éxitos.",
+    descripcion: descriptions.nineteenEightyNine,
     songs: song,
   },
   {
@@ -67,7 +68,7 @@ const albums = [
     img: reputationImg,
     banner: imgreputationbanner,
     background: gradientClasses.reputation,
-    descripcion: "Un álbum oscuro que enfrenta la controversia y la mala reputación que Taylor experimentó, con una estética de serpiente.",
+    descripcion: descriptions.reputation,
     songs: repsong,
   },
   {
@@ -77,7 +78,7 @@ const albums = [
     img: loverImg,
     banner: imgloverbanner,
     background: gradientClasses.lover,
-    descripcion: "Un álbum romántico y colorido que celebra el amor en todas sus formas. Incluye éxitos como ME! y Lover.",
+    descripcion: descriptions.lover,
     songs: loversong,
   },
   {
@@ -87,7 +88,7 @@ const albums = [
     img: folkloreImg,
     banner: imgfolklorebanner,
     background: gradientClasses.folklore,
-    descripcion: "Un álbum de folk-pop íntimo lanzado sorpresivamente durante la pandemia, con narraciones de historias ficticias.",
+    descripcion: descriptions.folklore,
     songs: folkloresong,
   },
   {
@@ -97,7 +98,7 @@ const albums = [
     img: evermoreImg,
     banner: imgevermorebanner,
     background: gradientClasses.evermore,
-    descripcion: "El hermano oscuro de Folklore, lanzado cinco meses después con una atmósfera más melancólica y narrativa.",
+    descripcion: descriptions.evermore,
     songs: ["willow", "coney island", "no body, no crime", "coney island", "ivy", "cowboy like me", "long story short", "marjorie", "closure", "evermore"],
   },
   {
@@ -107,7 +108,7 @@ const albums = [
     img: midnightsImg,
     banner: imgmidnightsbanner,
     background: gradientClasses.midnights,
-    descripcion: "Un álbum de concepto sobre los pensamientos de medianoche, con una atmósfera oscura y retro-futurista.",
+    descripcion: descriptions.midnights,
     songs: ["Midnights", "Lavender Haze", "Anti-Hero", "Snow on the Beach", "You're On Your Own, Kid", "Midnight Rain", "Question...?", "Vigilante Sh*t", "Bejeweled", "Maroon"],
   },
   {
@@ -117,7 +118,7 @@ const albums = [
     img: theTorturedPoetsDepartmentImg,
     banner: imgtorturedpoetsbanner,
     background: gradientClasses.theTorturedPoetsDepartment,
-    descripcion: "Su último álbum que explora el drama, la poesía y la catarsis emocional con una diversidad de estilos musicales.",
+    descripcion: descriptions.theTorturedPoetsDepartment,
     songs: ttpdsong,
   },
   {
@@ -127,7 +128,7 @@ const albums = [
     img: theLifeOfAShowgirlImg,
     banner: imglifeofashowgirlbanner,
     background: gradientClasses.lifeOfAShowgirl,
-    descripcion: "Un álbum que celebra la vida sobre el escenario, la pasión por la música en vivo y el brillo del espectáculo.",
+    descripcion: descriptions.theLifeOfAShowgirl,
     songs: ["Spotlight", "Center Stage", "Encore", "Curtain Call", "Backstage Secrets", "Standing Ovation", "Dressed to Impress", "The Grand Finale", "Encore (Reprise)", "The Show Must Go On"],
   },
 ];

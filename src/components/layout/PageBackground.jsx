@@ -11,7 +11,7 @@ export const gradientClasses = {
   folklore: "bg-gradient-to-b from-black via-gray-900/70 to-black",
   evermore: "bg-gradient-to-b from-black via-indigo-900/70 to-black",
   midnights: "bg-gradient-to-b from-black via-violet-900/70 to-black",
-  torturedPoetsDepartment: "bg-gradient-to-b from-black via-teal-900/70 to-black",
+  theTorturedPoetsDepartment: "bg-gradient-to-b from-black via-teal-900/70 to-black",
   lifeOfAShowgirl: "bg-gradient-to-b from-black via-cyan-900/70 to-black"
 };
 
