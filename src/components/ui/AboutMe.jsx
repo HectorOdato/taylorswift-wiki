@@ -3,9 +3,9 @@ import react from "react";
 
 export const AboutMe = () => {
     return (
-        <div className="flex relative z-5 w-full items-center justify-center bg-amber-200/10 p-10 space-x-10 rounded-lg max-w-7xl mx-auto">
+        <div className="flex relative z-5 w-full items-center justify-center bg-orange-600/60 p-10 space-x-10 rounded-lg max-w-7xl mx-auto ">
             <div>
-                <img src="https://media.licdn.com/dms/image/v2/D4D03AQF1HpqeGhLRUQ/profile-displayphoto-scale_200_200/B4DZtYlY0FHQAY-/0/1766717755794?e=1770854400&v=beta&t=YtGNB92wYg5R5owyJNFW3K8wqWE48k6Uv2h1bYxfoWg" alt="perfil" className="w-75 h-75 rounded-full" />
+                <img src="https://media.licdn.com/dms/image/v2/D4D03AQF1HpqeGhLRUQ/profile-displayphoto-scale_200_200/B4DZtYlY0FHQAY-/0/1766717755794?e=1770854400&v=beta&t=YtGNB92wYg5R5owyJNFW3K8wqWE48k6Uv2h1bYxfoWg" alt="perfil" className="w-75 h-75 rounded-full shadow-2xl" />
             </div>
             <div>
                 <p className="text-white max-w-4xl text-center">

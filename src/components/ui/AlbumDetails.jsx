@@ -16,8 +16,8 @@ const ContentDivider = ({ texto }) => {
 
 function Details({ parrafolinea1, parrafolinea2, parrafolinea3, citatextual, parrafofinal, imagen,momentosclave }) {
   return (
-    <section className="max-w-5xl mx-auto mt-16 mb-10 px-6 relative z-10">
-      <div className="bg-gray-900/50 backdrop-blur-md rounded-2xl shadow-xl p-8 text-gray-200 leading-relaxed text-[17px]">
+    <section className="max-w-6xl mx-auto mt-16 mb-10 px-6 relative z-10">
+      <div className="  p-8 text-gray-200 leading-relaxed text-[17px]">
 
         <img
           src={imagen}

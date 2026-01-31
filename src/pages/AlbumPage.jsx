@@ -20,11 +20,9 @@ function AlbumPage() {
     return <div>Álbum no encontrado</div>;
   }
   return (
-    <div className="min-h-screen relative bg-black text-white">
+  <div className="min-h-screen relative bg-black text-white">
   <div className={`absolute inset-0 ${album.background} bg-cover bg-center`} />
   <div className="absolute inset-0 bg-black/60 backdrop-blur-sm" />
-
-  <Header className="relative z-10" />
   <main className="relative z-10 max-w-6xl mx-auto px-6 py-10 space-y-12">    
     <section className="bg-white/5 border border-white/10 rounded-2xl p-6 shadow-lg">
       <DescriptionsCard
