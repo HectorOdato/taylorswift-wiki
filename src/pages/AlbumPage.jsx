@@ -1,19 +1,19 @@
 import React from "react";
 import { useParams } from "react-router-dom";
-import Header from "../components/layout/Header.jsx";
 import SongCard from "../components/ui/SongCard.jsx";
 import albums from "../data/AlbumsData.js";
 import DescriptionsCard from "../components/ui/DescriptionCard.jsx";
 import SectionDivider from "../components/ui/SectionDivider.jsx";
 import Details from "../components/ui/AlbumDetails.jsx";
 import detailsalbum from "../data/AlbumDetails.js";
-
+import {Carousel} from "../components/ui/carousel/Carousel.jsx";
+import imagesCarousel from "../components/ui/carousel/carouselImages.js";
 
 function AlbumPage() {
-  
   const { id } = useParams();
   const album = albums.find((album) => album.id === id);
   const detailsinfo = detailsalbum[id];
+  const albumCarousel = imagesCarousel.find((item) => item.id === id);
 
 
   if (!album) {
@@ -23,8 +23,8 @@ function AlbumPage() {
   <div className="min-h-screen relative bg-black text-white">
   <div className={`absolute inset-0 ${album.background} bg-cover bg-center`} />
   <div className="absolute inset-0 bg-black/60 backdrop-blur-sm" />
-  <main className="relative z-10 max-w-6xl mx-auto px-6 py-10 space-y-12">    
-    <section className="bg-white/5 border border-white/10 rounded-2xl p-6 shadow-lg">
+  <main className="relative z-10 max-w-8xl mx-auto px-6 py-10 space-y-12">    
+    <section className="bg-white/5 border border-white/10 rounded-2xl p-15 mt-10 shadow-lg max-w-7xl mx-auto">
       <DescriptionsCard
         description={album.descripcion}
         src={album.imglogo}
@@ -43,6 +43,12 @@ function AlbumPage() {
         alt={album.title}
         className="rounded-2xl w-full max-w-4xl shadow-2xl"
       />
+    </section>
+    <section>
+      <SectionDivider title="Galería de Imágenes" />
+      <div className="max-w-7xl mx-auto">
+          {albumCarousel && (<Carousel images={albumCarousel.images} /> )}
+      </div>
     </section>
     <section className="space-y-6">
       <SectionDivider title="Canciones" />

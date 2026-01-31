@@ -4,11 +4,11 @@ const DescriptionsCard = ({ src,alt, description, title, año }) => {
     return (
         <div className="flex items-center justify-center space-x-6  rounded-lg max-w-7xl mx-auto">
             <div>
-                <img className="w-75 h-75 rounded-lg " src={src} alt={alt}/>
+                <img className="w-85 h-85 rounded-lg " src={src} alt={alt}/>
             </div>
-            <div className="flex flex-col p-4 w-2/3">
-            <h1 className="text-3xl font-bold mb-4 text-white">{title} ({año})</h1>
-            <p className="text-white">{description}</p>
+            <div className="flex flex-col p-5 w-2/3">
+            <h1 className="text-4xl font-bold mb-4 text-white">{title} ({año})</h1>
+            <p className="text-white text-lg">{description}</p>
             </div>
         </div>
     );
