@@ -152,4 +152,4 @@ const AlbumDetailsContent = {
     }
 }
 
-export default detailsalbum;
+export default AlbumDetailsContent;
