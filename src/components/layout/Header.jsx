@@ -42,9 +42,7 @@ function DropdownMenu({children}) {
 }
 
 const Header = () => {
-    {/* Estado para manejar el menu movil */}
     const [isOpen, setIsOpen] = useState(false);
-    {/* Estado para manejar el menu eras movil */}
     const [showAlbums, setShowAlbums] = useState(false);
 
     return (
@@ -53,6 +51,7 @@ const Header = () => {
                 src="https://res.cloudinary.com/deijzj2mb/image/upload/v1768883427/imagen_2026-01-20_013024052_flzobt.png" 
                 alt="" 
                 className='absolute top-0 left-0 w-full h-full object-cover z-0'/>
+            
             <div className="max-w-7xl mx-auto relative z-10 px-4 sm:px-6 lg:px-8">
                 <div className="flex justify-between items-center">
                     <div className="flex flex-col py-4 sm:py-8 lg:py-12">
@@ -63,48 +62,55 @@ const Header = () => {
                             ✨ Song Vault ✨
                         </h2>
                     </div>
+
+                    {/* Navegación Desktop */}
                     <nav className="hidden md:block">
-                        <ul className="flex space-x-6 lg:space-x-12 xl:space-x-20 font-bold text-lg lg:text-xl xl:text-2xl bg-black/70 p-5 rounded-xl">
+                        <ul className="flex space-x-6 lg:space-x-12 xl:space-x-20 font-bold text-lg lg:text-xl xl:text-2xl bg-black/70 p-5 rounded-xl backdrop-blur-sm">
                             <li>
                                 <Link 
                                     to="/" 
-                                    className="text-white hover:text-orange-300 transition-colors duration-300">
+                                    className="text-white hover:text-orange-300 transition-all duration-300 hover:scale-110 inline-block">
                                     Inicio
                                 </Link>
                             </li>
                             <li>
                                 <Link 
                                     to="/biography" 
-                                    className="text-white hover:text-orange-300 transition-colors duration-300">
+                                    className="text-white hover:text-orange-300 transition-all duration-300 hover:scale-110 inline-block">
                                     Biografía
                                 </Link>
                             </li>
                             <li>
                                 <DropdownMenu>
                                     {albums.map((album) => (
-                                    <Link
-                                        key={album.id}
-                                        to={`/album/${album.id}`}
-                                        className="block px-4 py-2  text-gray-800 hover:bg-gray-100 hover:text-orange-300 rounded-2xl">
-                                        {album.title}
-                                    </Link>
+                                        <Link
+                                            key={album.id}
+                                            to={`/album/${album.id}`}
+                                            className="block px-4 py-2 text-gray-800 hover:bg-orange-100 hover:text-orange-600 rounded-2xl transition-all duration-200 transform hover:translate-x-1">
+                                            {album.title}
+                                        </Link>
                                     ))}
                                 </DropdownMenu>
                             </li>
                         </ul>
                     </nav>
+                    {/* Botón de menú móvil */}
                     <button 
-                        className="md:hidden text-2xl sm:text-3xl text-white hover:text-orange-300 transition-colors duration-300 p-2" 
-                        onClick={() => setIsOpen(!isOpen)}
-                        aria-label="Toggle menu">
-                        {isOpen ? '✕' : '☰'}
+                        className="md:hidden text-2xl sm:text-3xl text-white hover:text-orange-300 transition-all duration-300 p-2 hover:scale-110" 
+                        onClick={() => setIsOpen(!isOpen)}>
+                        <span className={`inline-block transition-transform duration-300 ${isOpen ? 'rotate-90' : 'rotate-0'}`}>
+                            {isOpen ? '✕' : '☰'}
+                        </span>
                     </button>
                 </div>
-            
-                {isOpen && (
-                    <nav className="md:hidden mt-4 pb-4 bg-black/70 rounded-xl p-4">
+                {/* Navegación Móvil */}
+                <div 
+                    className={`md:hidden overflow-hidden transition-all duration-500 ease-in-out ${
+                        isOpen ? 'max-h-screen opacity-100' : 'max-h-0 opacity- '
+                    }`}>
+                    <nav className="mt-4 pb-4 p-5 bg-black/70 rounded-2xl">
                         <ul className="space-y-3">
-                            <li>
+                            <li className="transform transition-all duration-300 hover:translate-x-2">
                                 <Link 
                                     to="/" 
                                     className="block text-white hover:text-orange-300 transition-colors duration-300 py-2 text-lg font-semibold"
@@ -112,41 +118,54 @@ const Header = () => {
                                     Inicio
                                 </Link>
                             </li>
-                            <li>
+                            <li className="transform transition-all duration-300 hover:translate-x-2">
                                 <Link 
                                     to="/biography" 
-                                    className="block text-white hover:text-orange-300 transition-colors duration-300 py-2 text-lg font-semibold focus-within:outline-none"
+                                    className="block text-white hover:text-orange-300 transition-colors duration-300 py-2 text-lg font-semibold"
                                     onClick={() => setIsOpen(false)}>
                                     Biografía
                                 </Link>
                             </li>
                             <li>
                                 <button 
-                                onClick={() => setShowAlbums(!showAlbums)}
-                                className="block text-white hover:text-orange-300 transition-colors duration-300 py-2 text-lg font-semibold w-full text-left">
-                                Eras {showAlbums ? '▲' : '▼'}
-                            </button>
-                            {showAlbums && (
-                                <ul className="mt-2 space-y-2 pl-4 border-l-2 border-orange-300 group-focus-within:block group-hover:block">
-                                    {albums.map((album) => (
-                                        <li key={album.id}>
-                                            <Link
-                                                to={`/album/${album.id}`}
-                                                className="block text-orange-200 hover:text-orange-300 transition-colors duration-300 py-1"
-                                                onClick={() => {
-                                                    setIsOpen(false);
-                                                    setShowAlbums(false);
+                                    onClick={() => setShowAlbums(!showAlbums)}
+                                    className="flex items-center justify-between w-full text-white hover:text-orange-300 transition-all duration-300 py-2 text-lg font-semibold group">
+                                    <span className="transform transition-all duration-300 group-hover:translate-x-2">
+                                        Eras
+                                    </span>
+                                    <span className={`transform transition-transform duration-300 ${showAlbums ? 'rotate-180' : 'rotate-0'}`}>
+                                        ▼
+                                    </span>
+                                </button>
+                                <div 
+                                    className={`overflow-hidden transition-all duration-500 ease-in-out ${
+                                        showAlbums ? 'max-h-96 opacity-100 mt-2' : 'max-h-0 opacity-0'
+                                    }`}>
+                                    <ul className="space-y-2 pl-4 border-l-2 border-orange-300">
+                                        {albums.map((album, index) => (
+                                            <li 
+                                                key={album.id}
+                                                className="transform transition-all duration-300 hover:translate-x-2"
+                                                style={{
+                                                    transitionDelay: showAlbums ? `${index * 50}ms` : '0ms'
                                                 }}>
+                                                <Link
+                                                    to={`/album/${album.id}`}
+                                                    className="block text-orange-200 hover:text-orange-300 transition-colors duration-300 py-1"
+                                                    onClick={() => {
+                                                        setIsOpen(false);
+                                                        setShowAlbums(false);
+                                                    }}>
                                                 {album.title}
-                                            </Link>
-                                        </li>
-                                    ))}
-                                </ul>
-                            )}
-                        </li>
-                    </ul>
-                </nav>
-            )}
+                                                </Link>
+                                            </li>
+                                        ))}
+                                    </ul>
+                                </div>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
             </div>
         </header>
     );
