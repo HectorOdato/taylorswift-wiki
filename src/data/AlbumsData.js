@@ -3,13 +3,17 @@ import { imgdebutbanner, imgfearlessbanner, imgspeaknowbanner, imgredbanner, img
 import { gradientClasses } from "../components/layout/PageBackground.jsx";
 import {descriptions}  from "./descriptionalbum.js"
 import {logosAlbums} from "../assets/images/logos.jsx";
-import ttpdsong from "./Songs/Ttpd.json";
+import ttpdsong from "./Songs/ttpd.json";
 import song from "./Songs/1989.json";
-import debugsong from "./Songs/Debug.json";
-import fearlesssong from "./Songs/Fearless.json";
-import folkloresong from "./Songs/Folklore.json";
-import loversong from "./Songs/Lover.json";
-import repsong from "./Songs/REP.json";
+import debugsong from "./Songs/debug.json";
+import fearlesssong from "./Songs/fearless.json";
+import folkloresong from "./Songs/folklore.json";
+import loversong from "./Songs/lover.json";
+import repsong from "./Songs/reputation.json";
+import speaknow from "./Songs/speakNow.json"
+import midnights from "./Songs/midnights.json"
+import evermore from "./Songs/evermore.json"
+import tloas from "./Songs/tloas.json"
 
 const albums = [
   {
@@ -43,7 +47,7 @@ const albums = [
     img: speakNowImg,
     background: gradientClasses.speakNow,
     descripcion: descriptions.speakNow,
-    songs: ["Mine", "Sparks Fly", "Back to December", "Innocent", "Enchanted", "Better Than Revenge", "Haunted", "Last Kiss", "Long Live", "Dear John"],
+    songs: speaknow,
   },
   {
     id: "red",
@@ -109,7 +113,7 @@ const albums = [
     banner: imgevermorebanner,
     background: gradientClasses.evermore,
     descripcion: descriptions.evermore,
-    songs: ["willow", "coney island", "no body, no crime", "coney island", "ivy", "cowboy like me", "long story short", "marjorie", "closure", "evermore"],
+    songs: evermore,
   },
   {
     id: "midnights",
@@ -120,7 +124,7 @@ const albums = [
     banner: imgmidnightsbanner,
     background: gradientClasses.midnights,
     descripcion: descriptions.midnights,
-    songs: ["Midnights", "Lavender Haze", "Anti-Hero", "Snow on the Beach", "You're On Your Own, Kid", "Midnight Rain", "Question...?", "Vigilante Sh*t", "Bejeweled", "Maroon"],
+    songs: midnights,
   },
   {
     id: "the_tortured_poets_department",
@@ -142,7 +146,7 @@ const albums = [
     banner: imglifeofashowgirlbanner,
     background: gradientClasses.lifeOfAShowgirl,
     descripcion: descriptions.theLifeOfAShowgirl,
-    songs: ["Spotlight", "Center Stage", "Encore", "Curtain Call", "Backstage Secrets", "Standing Ovation", "Dressed to Impress", "The Grand Finale", "Encore (Reprise)", "The Show Must Go On"],
+    songs: tloas,
   },
 ];
 
