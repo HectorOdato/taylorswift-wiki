@@ -134,7 +134,7 @@ const albums = [
     img: theTorturedPoetsDepartmentImg,
     banner: imgtorturedpoetsbanner,
     background: gradientClasses.theTorturedPoetsDepartment,
-    descripcion: descriptions.theTorturedPoetsDepartment,
+    descripcion: descriptions.torturedPoetsDepartment,
     songs: ttpdsong,
   },
   {
@@ -145,7 +145,7 @@ const albums = [
     img: theLifeOfAShowgirlImg,
     banner: imglifeofashowgirlbanner,
     background: gradientClasses.lifeOfAShowgirl,
-    descripcion: descriptions.theLifeOfAShowgirl,
+    descripcion: descriptions.lifeOfAShowgirl,
     songs: tloas,
   },
 ];
