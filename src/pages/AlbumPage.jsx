@@ -22,16 +22,15 @@ function AlbumPage() {
 
     /*Para ver que cancion esta selecionada*/
   const [openIndex, setOpenIndex] = useState(null);
-  
+
   const handleToggle = (idx) => {
     setOpenIndex((prev) => (prev === idx ? null : idx));
   };
 
   return (
-  <div className="min-h-screen relative bg-black text-white">
-  <div className={`absolute inset-0 ${album.background} bg-cover bg-center`} />
-  <div className="absolute inset-0 bg-black/60 backdrop-blur-sm" />
-  <main className="relative z-10 max-w-8xl mx-auto px-6 py-10 space-y-12">    
+  <div className="min-h-screen relative">
+    <div className={`absolute inset-0 ${album.background} bg-cover bg-center`} />
+    <main className={`relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6 sm:py-8 lg:py-12 space-y-8 sm:space-y-10 lg:space-y-16`}>
     <section className="bg-white/5 border border-white/10 rounded-2xl p-10 mt-10 shadow-lg max-w-7xl mx-auto">
       <DescriptionsCard
         description={album.descripcion}
@@ -58,9 +57,9 @@ function AlbumPage() {
           {albumCarousel && (<Carousel images={albumCarousel.images} /> )}
       </div>
     </section>
-    <section className="space-y-6">
+    <section className="space-y-5">
       <SectionDivider title="Canciones" />
-      <div className="bg-white/5 border border-white/10 rounded-2xl p-6 space-y-4">
+      <div className="bg-white/5 border border-white/10 rounded-2xl p-10 space-y-4">
         {album.songs.map((song, index) => (
           <SongCard
             key={song.id || index}
@@ -73,7 +72,7 @@ function AlbumPage() {
       </div>
     </section>
   </main>
-</div>
+  </div>
   );
 }
 

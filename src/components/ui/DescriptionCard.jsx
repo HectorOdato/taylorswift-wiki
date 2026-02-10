@@ -7,8 +7,8 @@ const DescriptionsCard = ({ src,alt, description, title, año }) => {
                 <img className="w-85 h-85 rounded-lg " src={src} alt={alt}/>
             </div>
             <div className="flex flex-col p-5 w-2/3">
-            <h1 className="text-4xl font-bold mb-4 text-white">{title} ({año})</h1>
-            <p className="text-white text-lg">{description}</p>
+            <h1 className="text-4xl font-bold mb-4 text-black">{title} ({año})</h1>
+            <p className="text-black text-lg">{description}</p>
             </div>
         </div>
     );

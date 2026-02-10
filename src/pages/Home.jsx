@@ -8,7 +8,7 @@ import { PageBackground } from "../components/layout/PageBackground";
 function Home() {
     return (
         <div className={`min-h-screen relative ${PageBackground.font_black}`}>
-            <div className="absolute top-0 left-0 w-full h-full bg-stone-950"></div>
+            <div className="absolute top-0 left-0 w-full h-full bg-white"></div>
             <div className="flex justify-center mx-auto pt-10 pb-10">
                 <img src="https://res.cloudinary.com/deijzj2mb/image/upload/v1769483226/pinot_noir_ezdwef.png" alt="welcome" className='relative z-10 w-350 h-150 rounded-xl' />
             </div>

@@ -3,27 +3,27 @@ import React from "react";
 export const gradientClasses = {
   debut: "bg-green-300/30",
 
-  fearless: "bg-yellow-400/60",
+  fearless: "bg-yellow-700/80",
 
-  speakNow: "bg-purple-800",
+  speakNow: "bg-purple-400",
 
-  red: "bg-red-800",
+  red: "bg-white",
 
-  nineteenEightyNine: "bg-sky-400",
+  nineteenEightyNine: "bg-sky-200",
 
   reputation: "bg-neutral-600",
 
-  lover: "bg-pink-300",
+  lover: "bg-pink-200",
 
-  folklore: "bg-neutral-500",
+  folklore: "bg-neutral-100",
 
-  evermore: "bg-gradient-to-b from-yellow-700/60 via-yellow-700/60 to-yellow-600/60",
+  evermore: "bg-yellow-700/60",
 
-  midnights: "bg-blue-600/40",
+  midnights: "bg-white",
 
-  theTorturedPoetsDepartment: "bg-neutral-400",
+  theTorturedPoetsDepartment: "bg-neutral-200",
 
-  lifeOfAShowgirl: "bg-orange-700/90"
+  lifeOfAShowgirl: "bg-white"
 };
 
 export const PageBackground =  { 

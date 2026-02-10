@@ -7,7 +7,7 @@ const SectionDivider = ({ title }) => {
       <div className="flex-grow h-1 bg-orange-600"></div>
 
       {title && (
-        <h2 className="mx-6 text-white text-2xl md:text-5xl font-semibold tracking-wide">
+        <h2 className="mx-6 text-black text-2xl md:text-5xl font-semibold tracking-wide">
           {title}
         </h2>
       )}
