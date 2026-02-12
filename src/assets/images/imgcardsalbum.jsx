@@ -11,6 +11,6 @@ export const taylorImages = {
     evermore: "https://res.cloudinary.com/deijzj2mb/image/upload/v1768711499/9_sbeeqh.png",
     midnights: "https://res.cloudinary.com/deijzj2mb/image/upload/v1768711500/10_qdspe8.png",
     theTorturedPoetsDepartment: "https://res.cloudinary.com/deijzj2mb/image/upload/v1768711501/11_vdyeaw.png",
-    thelifeofshowgirl: "https://res.cloudinary.com/deijzj2mb/image/upload/v1769047773/tloasbanner_sbzl58.jpg",
+    thelifeofshowgirl: "https://res.cloudinary.com/deijzj2mb/image/upload/v1768711502/12_n8tbzs.png",
 };
 
