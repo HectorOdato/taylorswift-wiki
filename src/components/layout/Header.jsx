@@ -46,7 +46,7 @@ const Header = () => {
     const [showAlbums, setShowAlbums] = useState(false);
 
     return (
-        <header className="relative z-20 shadow-2xl p-3 sm:p-5">
+        <header className="sticky top-0 w-full h-auto z-20 shadow-2xl p-3 sm:p-5">
             <img 
                 src="https://res.cloudinary.com/deijzj2mb/image/upload/v1768883427/imagen_2026-01-20_013024052_flzobt.png" 
                 alt="" 
