@@ -6,7 +6,7 @@ import albums from "../../data/AlbumsData";
 
 function DropdownMenu({children}) {
     /* utilice para cerrar y abrir el menu si IsOpen = TRUE se abre */
-    const [isOpen, setIsOpen] = useState(false); 
+    const [isOpen, setIsOpenMenu] = useState(false); 
     /* useRef para referenciar el menu desplegable como tag HTML y asi  detectar los clicks fuera de el */
     const dropdownRef = useRef(null);
 
@@ -14,7 +14,7 @@ function DropdownMenu({children}) {
     useEffect(() => {
         const handleClickOutside = (event) => {
             if (dropdownRef.current && !dropdownRef.current.contains(event.target)) {
-                setIsOpen(false);
+                setIsOpenMenu(false);
             }
         };
 
@@ -27,7 +27,7 @@ function DropdownMenu({children}) {
     return (
         <div className="relative" ref={dropdownRef}>
             <button
-                onClick={() => setIsOpen(!isOpen)}
+                onClick={() => setIsOpenMenu(!isOpen)}
                 className="text-white hover:text-orange-300 transition-all duration-300 hover:scale-110"
             >
                 Eras
@@ -86,7 +86,7 @@ const Header = () => {
                                         <Link
                                             key={album.id}
                                             to={`/album/${album.id}`}
-                                            onClick={() => setIsOpen=false}
+                                            onClick={() => setIsOpenMenu=false}
                                             className="block px-4 py-2 text-orange-400 hover:bg-orange-100 hover:text-orange-600 rounded-xl transition-all duration-200 transform hover:translate-x-1">
                                             {album.title}
                                         </Link>
