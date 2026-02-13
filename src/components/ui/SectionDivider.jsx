@@ -3,7 +3,7 @@ import React from 'react';
 
 const SectionDivider = ({ title }) => {
   return (
-    <div className="flex items-center w-full my-16 relative z-10">
+    <div className="flex items-center w-full my-8 md:my-16 relative z-10">
       <div className="flex-grow h-1 bg-orange-600"></div>
 
       {title && (

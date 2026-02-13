@@ -5,11 +5,11 @@ const ContentDivider = ({ texto }) => {
   return (
     <div className="flex items-center my-10">
       {texto && (
-        <p className="mx-6 text-black text-2xl md:text-2xl font-semibold tracking-wide">
+        <p className=" text-black text-xl lg:text-3xl lg:mx-6 font-semibold tracking-wide">
           {texto}
         </p>
       )}
-      <div className="flex-grow h-px bg-black"></div>
+      <div className="lg:flex-grow h-px bg-black"></div>
     </div>
   );
 };
@@ -17,11 +17,11 @@ const ContentDivider = ({ texto }) => {
 function AlbumDetails({ parrafolinea1, parrafolinea2, parrafolinea3, citatextual, parrafofinal, imagen,momentosclave }) {
   return (
     <div className="max-w-7xl mx-auto mt-10 mb-10 px-6 relative z-10">
-      <div className="  p-8 text-black leading-relaxed text-lg ">
+      <div className="text-black text-base md:text-base lg:text-lg xl:text-xl leading-relaxed text-left md:text-left ">
         <img
           src={imagen}
           alt="Album"
-          className="float-left w-75 h-75 object-cover rounded-full mr-6 mb-3 shadow-lg border-4 border-pink-400"
+          className="float-left lg:w-75 lg:h-75 object-cover lg:rounded-full lg:mr-5 mb-3 shadow-lg lg:border-4 lg:border-pink-400"
         />
 
         <p>{parrafolinea1}</p>
@@ -37,7 +37,7 @@ function AlbumDetails({ parrafolinea1, parrafolinea2, parrafolinea3, citatextual
         <ul>
             <ContentDivider texto="Momentos Importantes" />
             {momentosclave && momentosclave.map((momento, index) => (
-              <li key={index} className="ml-10 mt-5 list-disc list-inside text-amber-500 font-bold">
+              <li key={index} className="text-base  md:text-base lg:text-lg xl:text-xl leading-relaxed text-left md:text-left list-disc list-inside text-amber-500 font-bold">
                 {momento}
               </li>
             ))}

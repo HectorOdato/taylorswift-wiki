@@ -3,7 +3,7 @@ import React from "react";
 export const gradientClasses = {
   debut: "bg-green-300/30",
 
-  fearless: "bg-yellow-700/80",
+  fearless: "bg-white",
 
   speakNow: "bg-purple-400",
 
