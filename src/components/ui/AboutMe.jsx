@@ -3,7 +3,7 @@ import react from "react";
 
 export const AboutMe = () => {
     return (
-        <div className="flex flex-col max-w-sm  md:max-w-2xl lg:flex-row lg:max-w-7xl xl:max-w-6xl relative z-5 items-center justify-center bg-orange-600/80 p-10 rounded-lg  mx-auto ">
+        <div className="flex flex-col max-w-sm md:max-w-2xl lg:flex-row lg:max-w-7xl xl:max-w-6xl relative z-5 items-center justify-center bg-orange-600/80 p-10 rounded-lg  mx-auto ">
             <div>
                 <img src="https://media.licdn.com/dms/image/v2/D4D03AQF1HpqeGhLRUQ/profile-displayphoto-scale_200_200/B4DZtYlY0FHQAY-/0/1766717755794?e=1770854400&v=beta&t=YtGNB92wYg5R5owyJNFW3K8wqWE48k6Uv2h1bYxfoWg" alt="perfil" className="w-75 h-75 rounded-full shadow-2xl" />
             </div>

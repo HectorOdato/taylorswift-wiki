@@ -3,7 +3,7 @@
 @theme {
   --animate-zoom-image: zoom-image 1.2s ease-in-out both;
 
-  --animate-fade-vertical-down: fade-vertical-down 0.8s ease-out both;
+  --animate-fade-vertical-down: fade-vertical-down 0.5s ease-out both;
   --animate-fade-vertical-up: fade-vertical-up 0.8s ease-out both;
 
   --animate-fade-horizontal-right: fade-horizontal-right 1s ease-out both;

@@ -33,7 +33,7 @@ function DropdownMenu({children}) {
                 Eras
             </button>
             {isOpen && (
-                <div className="left-0 mt-2 w-48 bg-white shadow-lg rounded-md absolute z-50">
+                <div className="left-0 mt-2 w-50 bg-black/70 shadow-lg rounded-md absolute z-50 animate-fade-vertical-down">
                     {children} {/* Aca use children para que se renderizen los links de la lista desplegable, es decir todo lo que ponga entre los tags de DropdownMenu */}
                 </div>
             )}
@@ -86,7 +86,8 @@ const Header = () => {
                                         <Link
                                             key={album.id}
                                             to={`/album/${album.id}`}
-                                            className="block px-4 py-2 text-gray-800 hover:bg-orange-100 hover:text-orange-600 rounded-2xl transition-all duration-200 transform hover:translate-x-1">
+                                            onClick={() => setIsOpen=false}
+                                            className="block px-4 py-2 text-orange-400 hover:bg-orange-100 hover:text-orange-600 rounded-xl transition-all duration-200 transform hover:translate-x-1">
                                             {album.title}
                                         </Link>
                                     ))}
@@ -151,7 +152,7 @@ const Header = () => {
                                                 }}>
                                                 <Link
                                                     to={`/album/${album.id}`}
-                                                    className="block text-orange-200 hover:text-orange-300 transition-colors duration-300 py-1"
+                                                    className="block text-orange-400 hover:text-orange-300 transition-colors duration-300 py-1"
                                                     onClick={() => {
                                                         setIsOpen(false);
                                                         setShowAlbums(false);
