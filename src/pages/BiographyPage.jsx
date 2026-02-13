@@ -18,7 +18,7 @@ const floatimage = {
 
 export const BiographyPage = () => {
     return (
-    <main className={`min-h-screen ${PageBackground.font_black} text-white p-8`}>
+    <main className={`min-h-screen ${PageBackground.font_white} text-black p-8`}>
         <section className="flex flex-col lg:flex-row items-center justify-center mx-auto lg:mt-10 lg:mb-10 px-4 lg:px-0">
         <div className="w-full lg:w-auto mb-6 lg:mb-0">
         <img 
@@ -63,7 +63,7 @@ export const BiographyPage = () => {
                 parrafo1="La pareja actual de Taylor Swift es Travis Kelce, ala cerrada del equipo de la NFL, Kansas City Chiefs. Aunque no se sabe exactamente cuándo inició su relación, los registros de su relación comenzaron en septiembre de 2023, cuando Swift se presentó por primera vez en un partido de fútbol americano de los Kansas City Chiefs contra los Chicago Bears. A partir de ahí, sus apariciones juntos no cesaron, hasta que se les vio besándose en el concierto de The Eras Tour en Argentina. Su noviazgo ha estado lleno de momentos virales hasta la fecha, en el US Open."
                 classFloatImage={floatimage.float_right}
                 />
-                <section className="flex flex-col items-center text-gray-200 leading-relaxed text-base md:text-lg lg:text-xl max-w-7xl mx-auto lg:mt-25 ">
+                <section className="flex flex-col items-center text-black leading-relaxed text-base md:text-lg lg:text-xl max-w-7xl mx-auto lg:mt-25 ">
                     <h2 className="text-2xl md:text-3xl lg:text-5xl font-bold mb-6 md:mb-8 text-pink-400 text-center leading-relaxed">Como comenzo la carrera de Taylor Swift </h2>
                     <p className="mb-5">Motivada por la artista Shania Twain, Taylor decidió dejar las clases de actuación para enfocarse en cantar en festivales y eventos musicales. A los 11 años viajó junto a su madre a Tennessee con el objetivo de presentar grabaciones donde interpretaba canciones de Dolly Parton y de las Dixie Chicks a distintas compañías discográficas, aunque en ese momento no obtuvo respuesta positiva.
                         Más adelante, Taylor aprendió a tocar la guitarra y comenzó a dar sus primeros pasos en la composición de letras. Durante esa etapa, tuvo la oportunidad de participar como modelo en un programa de talentos emergentes de la marca Abercrombie & Fitch. Además, con el apoyo del representante artístico Dan Dymtrow, consiguió que una canción original suya fuera utilizada en una campaña de la marca Maybelline.
