@@ -22,10 +22,11 @@ return (
                     Un viaje por la música, las emociones y las eras de Taylor Swift
                 </p>
             </div>
+            
         </section>
         <SectionDivider title="Eras" />
         
-        <section className="relative z-10 justify-items-center grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-5 px-4 py-8">
+        <section className="relative z-10 max-w-screen-2xl mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-5 py-5">
             {albums.map((album) => (
                 <AlbumCard
                     key={album.id}

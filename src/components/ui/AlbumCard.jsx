@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 const AlbumCard = ({ album }) => {
   return (
     <Link to={`/album/${album.id}`}>
-      <div className="w-80 h-60 mx-auto lg:w-75 lg:h-75 perspective group border border-black ">
+      <div className="w-80 h-60 lg:w-75 lg:h-75 group border border-black ">
       <div className="relative w-full h-full duration-700 transform-style-3d group-hover:rotate-y-180">
         {/* Cara frontal */}
         <img
