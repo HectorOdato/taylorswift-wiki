@@ -24,10 +24,10 @@ export const BiographyPage = () => {
         <img 
             src="https://res.cloudinary.com/deijzj2mb/image/upload/v1770171269/GettyImages-2014750039-da654c28b8f84f3fb5c7db97106b1abc_yzricu.jpg" 
             alt="Taylor Swift Biography" 
-            className="w-full lg:w-150 lg:h-150 object-cover rounded-xl shadow-lg"
+            className="w-full lg:w-150 lg:h-150 object-cover rounded-xl shadow-lg animate-zoom-image"
         />
     </div>
-        <div className="w-full lg:w-auto lg:ml-8 lg:p-10 flex flex-col gap-3">
+        <div className="w-full lg:w-auto lg:ml-8 lg:p-10 flex flex-col gap-3 animate-fade-horizontal-left">
         <h1 className="text-2xl lg:text-4xl xl:text-5xl font-bold mb-3 lg:mb-5 text-center lg:text-left">
             Taylor Swift, historia y biografía
         </h1>
